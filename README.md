@@ -1,3 +1,3 @@
 # DATA_SCIENCE
 
-ok
+Beginning this journey into the world of data science. 
