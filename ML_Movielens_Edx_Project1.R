@@ -451,9 +451,10 @@ sum(is.na(test_edx_set))   ## 0
 sum(duplicated(train_edx_set))  ### 0
 sum(duplicated(test_edx_set))   ### 0
 
-##################################################
-#### FIRST MODEL: only the average value       ###
-##################################################
+##################################################################
+#### FIRST MODEL: Expanding the Edx code  from              ######
+#### HarvardX PH125.8x Data Science: Machine Learning       ######
+##################################################################
 
 ### Given the total rating distribution, it is assumed that the true rating 
 ##  is the simple average of the rating values across all the movies and users.
