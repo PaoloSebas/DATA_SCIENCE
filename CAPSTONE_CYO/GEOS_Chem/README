@@ -1,1 +1,78 @@
 README
+
+###############################################################################
+###################                                    ########################
+###################          FILES DESCRIPTION         ########################
+###################                                    ########################
+###############################################################################
+
+# # The .nc4 files used to develop the R script you find in this folder 
+##  are available at the following 
+#   link: 
+#
+#   https://data.aad.gov.au/metadata/records/AAS_4431_CAMMPCAN_GEOS_Chem_Model_AA_2017-18
+#   
+#   Citation: Fisher, J., Sebastianelli, P., Schofield, R. (2021) 
+#   GEOS-Chem model output for 2017-2018 CAMMPCAN Aurora Australis voyages, 
+#   Ver. 1, Australian Antarctic Data Centre - doi:10.26179/hna9-ab45, 
+#   Accessed: 2021-07-27
+#
+## Brief description
+#
+# The dataset provides model output from the GEOS-Chem chemical transport model 
+# to support the CAMMPCAN and MARCUS 2017-2018 voyages.
+#
+# The following output types are included (for variable names, see below):
+#
+# Regional daily means
+#
+# Filenames: GEOSChem.{DATA_TYPE}.{YYYYMM}01_regional.nc4
+# {DATA_TYPE} can be any of SpeciesConc, StateMet, Aerosols, AerosolMass (see below).
+# {YYYYMM} is the year and month for the data included in the file.
+# The model output has been averaged on a daily timescale and is provided for 
+# all gridboxes in the region bounded by 30-90°S (inclusive). 
+# The resulting dataset is 4-dimensional (longitude, latitude, level, time). 
+# These are netcdf files.
+#  
+# Output data types (correspond to filenames given above):
+# 1. SpeciesConc: Concentrations of advected model species.
+# 2. StateMet: Meteorological fields and other derived quantities.
+# 
+# References:
+# The International GEOS-Chem User Community. (2020, May 21). 
+# geoschem/geos-chem: GEOS-Chem 12.8.1 (Version 12.8.1). 
+# Zenodo. http://doi.org/10.5281/zenodo.3837666
+# 
+# Travis, K. R., Heald, C. L., Allen, H. M., Apel, E. C., Arnold, S. R., Blake, 
+# D. R., Brune, W. H., Chen, X., Commane, R., Crounse, J. D., Daube, B. C., Diskin, 
+# G. S., Elkins, J. W., Evans, M. J., Hall, S. R., Hintsa, E. J., Hornbrook, R. S., 
+# Kasibhatla, P. S., Kim, M. J., Luo, G., McKain, K., Millet, D. B., Moore, 
+# F. L., Peischl, J., Ryerson, T. B., Sherwen, T., Thames, A. B., Ullmann, K., 
+# Wang, X., Wennberg, P. O., Wolfe, G. M., and Yu, F.: 
+# Constraining remote oxidation capacity with ATom observations, 
+# Atmos. Chem. Phys., 20, 7753–7781, https://doi.org/10.5194/acp-20-7753-2020, 2020.
+#
+
+# Resource provider AU/AADC > Australian Antarctic Data Centre, Australia
+# Publisher Australian Antarctic Data Centre
+
+# Related People
+# Processor, Principal investigator FISHER, JENNY
+# Processor, Principal investigator SCHOFIELD, ROBYN
+# Processor, Principal investigator SEBASTIANELLI, PAOLO
+# Originator Australia
+# Originator Australian Antarctic Division
+
+###############################################################################
+###################                                    ########################
+###################          LICENSE                   ########################
+###################                                    ########################
+###############################################################################
+
+# This data set conforms to the CCBY Attribution License 
+# (http://creativecommons.org/licenses/by/4.0/). 
+# Please follow instructions listed in the citation reference provided 
+# at http://data.aad.gov.au/aadc/metadata/citation.cfm?entry_id=AAS_4431_CAMMPCAN_GEOS_Chem_Model_AA_2017-18 
+# when using these data. 
+# Please also contact Jenny Fisher at the University of Wollongong before 
+# using these data. Jennyf at uow dot edu dot au
