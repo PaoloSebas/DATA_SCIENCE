@@ -539,7 +539,6 @@ Which one is the location with maximum value of $[SO_{2}]$?
 #### Where is the maximum [SO2] concentration?
 
 ### The maximum value of [SO2] is at -30° latitude and 30° longitude
-##  Ingwe Local Municipality, South Africa
 
 which.max(total_dataframe_filtered$SpeciesConc_SO2)  ### row 4405
 total_dataframe_filtered$lat[4405] # -30
