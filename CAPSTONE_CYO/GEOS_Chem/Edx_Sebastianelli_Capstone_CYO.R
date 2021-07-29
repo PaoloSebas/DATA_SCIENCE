@@ -53,7 +53,7 @@
 # {DATA_TYPE} can be any of SpeciesConc, StateMet, Aerosols, AerosolMass (see below).
 # {YYYYMM} is the year and month for the data included in the file.
 # The model output has been averaged on a daily timescale and is provided for 
-# all gridboxes in the region bounded by 30-90°S (inclusive). 
+# all gridboxes in the region bounded by 30-90Â°S (inclusive). 
 # The resulting dataset is 4-dimensional (longitude, latitude, level, time). 
 # These are netcdf files.
 #  
@@ -411,7 +411,7 @@ total_dataframe_filtered <- GC_total_dataframe[ , !(names(GC_total_dataframe) %i
 ###    The 203 species concentrations + the remaining meteorological variables.
 ### The analysis has been restricted to the surface (lowest model level) 
 ### to facilitate the analysis.
-### Calculating (long×lat×lev=144×31×1) = 4464 training samples.
+### Calculating (longÃ—latÃ—lev=144Ã—31Ã—1) = 4464 training samples.
 ### To build the validation data set a randomly selected 
 ### 10% of the locations has been withdrawn.
 
@@ -467,8 +467,7 @@ ggplot(data = world) +
 
 #### Where is the maximum [SO2] concentration?
 
-### The maximum value of [SO2] is at -30° latitude and 30° longitude
-##  Ingwe Local Municipality, South Africa
+### The maximum value of [SO2] is at -30Â° latitude and 30Â° longitude
 
 which.max(total_dataframe_filtered$SpeciesConc_SO2)  ### row 4405
 total_dataframe_filtered$lat[4405] # -30
